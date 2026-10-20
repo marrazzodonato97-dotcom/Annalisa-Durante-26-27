@@ -1,0 +1,73 @@
+/* ===== 1. COLORI =====
+   Cambia i colori SOLO qui: tutto il sito li legge da queste variabili. */
+:root {
+  --sfondo: #f5f7fc;      /* sfondo pagina */
+  --testo: #1f2547;       /* testo principale */
+  --primario: #3b4ba8;    /* indaco: titoli e menu */
+  --accento1: #2bb3a3;    /* verde acqua */
+  --accento2: #f5c451;    /* giallo sole */
+  --accento3: #ee7b9a;    /* rosa */
+  --bianco: #ffffff;
+}
+
+/* ===== 2. BASE ===== */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Nunito Sans", Arial, sans-serif; /* se manca il primo, usa il successivo */
+  color: var(--testo);
+  background: var(--sfondo);
+  line-height: 1.6;
+}
+h1, h2, h3 { font-family: "Fraunces", Georgia, serif; color: var(--primario); line-height: 1.2; }
+h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); margin: 0 0 1rem; }
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+.contenitore { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
+p { max-width: 65ch; } /* righe non troppo lunghe = più leggibili */
+
+/* ===== 3. MENU ===== */
+header { background: var(--bianco); border-bottom: 4px solid var(--accento2); }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+.logo { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.3rem; color: var(--primario); text-decoration: none; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
+nav ul a { text-decoration: none; font-weight: 600; padding: .3rem 0; border-bottom: 3px solid transparent; }
+nav ul a:hover, nav ul a.attivo { border-bottom-color: var(--accento1); }
+#bottone-menu { display: none; background: none; border: 2px solid var(--primario); color: var(--primario); border-radius: 8px; padding: .4rem .8rem; font-size: 1rem; cursor: pointer; }
+
+/* ===== 4. HOME ===== */
+.hero { padding: 4rem 0 3rem; }
+.hero p { font-size: 1.2rem; }
+.bottone {
+  display: inline-block; background: var(--primario); color: var(--bianco);
+  padding: .8rem 1.6rem; border-radius: 999px; text-decoration: none; font-weight: 700;
+  border: none; font-size: 1rem; cursor: pointer;
+}
+.bottone:hover { background: var(--accento1); }
+
+/* Le schede che portano alle altre sezioni */
+.schede { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; padding-bottom: 4rem; }
+.scheda { background: var(--bianco); border-radius: 16px; padding: 1.5rem; text-decoration: none; border-top: 8px solid var(--accento1); transition: transform .2s; }
+.scheda:hover { transform: translateY(-6px); }
+.scheda:nth-child(2) { border-top-color: var(--accento2); }
+.scheda:nth-child(3) { border-top-color: var(--accento3); }
+.scheda h2 { margin-top: 0; font-size: 1.4rem; }
+
+/* ===== 5. PAGINE INTERNE ===== */
+main.pagina { padding: 3rem 0 4rem; }
+.membri { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+.membro { background: var(--bianco); border-radius: 16px; padding: 1.2rem; text-align: center; }
+.avatar { width: 96px; height: 96px; border-radius: 50%; margin: 0 auto .8rem; background: var(--accento3); color: var(--bianco); display: grid; place-items: center; font-size: 2rem; font-weight: 700; }
+.avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+#dettagli { display: none; background: var(--bianco); border-left: 6px solid var(--accento2); padding: 1rem 1.5rem; margin-top: 1rem; border-radius: 8px; }
+#dettagli.visibile { display: block; } /* JavaScript aggiunge/toglie questa classe */
+
+footer { text-align: center; padding: 2rem 1rem; background: var(--primario); color: var(--bianco); }
+
+/* ===== 6. TELEFONO ===== */
+@media (max-width: 640px) {
+  #bottone-menu { display: block; }
+  nav ul { display: none; flex-direction: column; gap: .5rem; position: absolute; top: 70px; right: 1rem; background: var(--bianco); padding: 1rem; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.15); }
+  nav ul.aperto { display: flex; }
+  header { position: relative; }
+}

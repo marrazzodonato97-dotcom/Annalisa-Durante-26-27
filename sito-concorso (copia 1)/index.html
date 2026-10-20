@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adotta Annalisa</title>
+  <!-- Collega il foglio di stile: senza questa riga la pagina resta "nuda" -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font da Google Fonts (serve internet; altrimenti il sito usa Georgia/Arial) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="contenitore">
+      <nav>
+        <a class="logo" href="index.html">Liceo Alfred Nobel</a>
+        <button id="bottone-menu" aria-label="Apri il menu">Menu</button>
+        <ul id="menu">
+          <!-- href = la pagina verso cui porta il link -->
+          <li><a class="attivo" href="index.html">Home</a></li>
+          <li><a href="progetto.html">Progetto</a></li>
+          <li><a href="team.html">La classe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenitore">
+    <section class="hero">
+      <h1>Adotta Annalisa Durante 2026/27</h1>
+      <p>Una frase che spiega in modo semplice di cosa parla il sito e perché vale la pena esplorarlo.</p>
+      <a class="bottone" href="progetto.html">Nome del "lavoro"</a>
+    </section>
+
+    <!-- Ogni <a class="scheda"> è un blocco cliccabile che porta a un'altra pagina -->
+    <section class="schede">
+      <a class="scheda" href="progetto.html">
+        <h2>Il progetto</h2>
+        <p>Di cosa si tratta, come ci abbiamo lavorato e cosa abbiamo scoperto.</p>
+      </a>
+      <a class="scheda" href="team.html">
+        <h2>La classe</h2>
+        <p>Le persone che hanno realizzato il lavoro.</p>
+      </a>
+      <a class="scheda" href="progetto.html#risultati">
+        <h2>I risultati</h2>
+        <p>Il punto d'arrivo, in breve. (Il #risultati porta direttamente a una parte della pagina.)</p>
+      </a>
+    </section>
+
+    <!-- ESEMPIO IMMAGINE: togli i commenti e metti la tua foto nella cartella "immagini"
+    <img src="immagini/foto-classe.jpg" alt="Descrizione della foto">
+    -->
+  </main>
+
+  <footer>
+    <p>Progetto realizzato dalla classe 2E per il concorso "Adotta Annalisa Durante"</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

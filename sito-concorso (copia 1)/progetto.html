@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progetto</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="contenitore">
+      <nav>
+        <a class="logo" href="index.html">Qualcosa</a>
+        <button id="bottone-menu" aria-label="Apri il menu">Menu</button>
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="attivo" href="progetto.html"> progetto</a></li>
+          <li><a href="team.html">La classe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenitore pagina">
+    <h1>Progetto</h1>
+    <p>Qui contesto</p>
+
+    <h2>contesto o magari il metodo di lavoro</h2>
+    <p>il progetto vero e propio?</p>
+
+    <!-- Il bottone e il riquadro sono collegati da script.js tramite gli id -->
+    <button class="bottone" id="bottone-dettagli">Mostra i dettagli</button>
+    <div id="dettagli">
+      <p>Usato  per approfondimenti o dettagli?.</p>
+    </div>
+
+    <!-- id="risultati" è la "meta" del link #risultati nella home -->
+    <h2 id="risultati">I risultati</h2>
+    <p>Cosa ci ha insegnato? Magari ci ha unito per un tema importante?</p>
+  </main>
+
+  <footer>
+    <p>Progetto realizzato dalla classe 2E per il concorso Annalisa Durante</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

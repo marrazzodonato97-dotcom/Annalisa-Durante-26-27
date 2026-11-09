@@ -17,7 +17,7 @@ if (bottoneDettagli && dettagli) {
 
     
     if (dettagli.classList.contains("visibile")) {
-      bottoneDettagli.textContent = "Link utili";
+      bottoneDettagli.textContent = "Nascondi Link";
     } else {
       bottoneDettagli.textContent = "Link utili";
     }

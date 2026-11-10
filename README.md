@@ -1,6 +1,6 @@
 # Annalisa-Durante-26-27
 ITA-->
-Progetto realizzato da Marrazzo Donato (donato.marrazzo_)=instagram.
+Progetto realizzato da Marrazzo Donato ()=instagram.
 I file sono soggetti a licenza MIT <a href="LICENSE">LICENSE</a> sotto il possesso del sottoscritto.
 
 Per maggiori informazioni contattare l'email ().

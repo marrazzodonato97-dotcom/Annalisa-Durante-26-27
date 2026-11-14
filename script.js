@@ -4,9 +4,10 @@ const menu = document.getElementById("menu");
 
 
 bottoneMenu.addEventListener("click", function () {
-  menu.classList.toggle("aperto");
-});
+  const menuAperto = menu.classList.toggle("aperto");
 
+  bottoneMenu.setAttribute("aria-expanded", menuAperto);
+});
 
 const bottoneDettagli = document.getElementById("bottone-dettagli");
 const dettagli = document.getElementById("dettagli");

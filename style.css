@@ -107,6 +107,10 @@ footer { text-align: center; padding: 2rem 1rem; background: var(--primario); co
   letter-spacing: .12em;
 }
 
+.linkBlu{
+  color: blue;
+}
+
 blockquote {
   margin: 2rem 0 0;
   padding: 1rem 0 1rem 1.25rem;
